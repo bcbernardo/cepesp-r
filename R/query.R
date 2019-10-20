@@ -151,7 +151,7 @@ switch_political_aggregation <- function(text) {
 switch_position <- function(text) {
 
   if (is.numeric(text))
-    return(switch_numeric(text, c(1, 3, 5, 6, 7, 8, 11, 13)))
+    return(switch_numeric(text, c(1, 3, 5, 6, 7, 8, 11, 12, 13)))
 
   return(switch(text,
                 "President"= 1,
@@ -168,6 +168,8 @@ switch_position <- function(text) {
                 "Deputado Distrital"= 8,
                 "Mayor"= 11,
                 "Prefeito"= 11,
+                "Vice Mayor"= 12,
+                "Vice-Prefeito"= 12,
                 "Councillor"=13,
                 "Vereador"=13))
 
